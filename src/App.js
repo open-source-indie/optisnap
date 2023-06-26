@@ -4,6 +4,7 @@ import CompressionSettings from "./components/CompressionSettings";
 import CompressButton from "./components/CompressButton";
 import ImageCompressor from "image-compressor.js";
 import AdvertBanner from "./components/AdvertBanner";
+import SocialSharing from "./components/socialSharing";
 
 function App() {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -161,8 +162,12 @@ function App() {
             ) : (
               <p>No Compressed Image</p>
             )}
-          </div>
+          </div> 
+          <div className="shadow-xl p-5 mt-6">
+          <SocialSharing />
         </div>
+        </div>
+       
       </div>
 
       {/* <div className="bg-blue-500 p-4 text-white text-center">
